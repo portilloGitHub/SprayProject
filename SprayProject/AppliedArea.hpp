@@ -14,22 +14,22 @@ namespace trimble
 {
 
 
-//-----------------------------------------------------------------------------
-// Class
-//-----------------------------------------------------------------------------
-class CAppliedArea
-{
-  public:
-    CAppliedArea();
+	//-----------------------------------------------------------------------------
+	// Class
+	//-----------------------------------------------------------------------------
+	class CAppliedArea
+	{
+	public:
+		CAppliedArea();
 
-    void AddPolygon(const CPolygon& poly);
-    bool CheckOverlap(const CPolygon& poly) const;
+		void AddPolygon(const CPolygon& poly);
+		bool CheckOverlap(const CPolygon& poly) const;
 
-  private:
-    // TODO not sure if this is the proper container
-    std::vector<CPolygon> CPolygonVector;
-    CPolygonVector _polygons;
-};
+	private:
+		// TODO not sure if this is the proper container
+		std::vector<CPolygon> CPolygonVector;
+		CPolygonVector _polygons;
+	};
 
 
 }

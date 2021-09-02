@@ -25,6 +25,7 @@
     <ClInclude Include="AppliedArea.hpp" />
     <ClInclude Include="EnuPosition.hpp" />
     <ClInclude Include="Implement.hpp" />
+    <ClInclude Include="Polygon.hpp" />
     <ClInclude Include="Tractor.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

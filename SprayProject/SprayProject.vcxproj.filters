@@ -32,5 +32,8 @@
     <ClInclude Include="Tractor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Polygon.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

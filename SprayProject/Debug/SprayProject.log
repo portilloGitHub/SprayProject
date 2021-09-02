@@ -1,0 +1,46 @@
+﻿  Implement.cpp
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(40,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(40,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(41,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(41,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(36,23): error C2143: syntax error: missing ';' before ':'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(36,1): error C2059: syntax error: ':'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.hpp(23,1): error C2059: syntax error: '}'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.hpp(23,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\AppliedArea.hpp(21,2): error C2011: 'trimble::CAppliedArea': 'class' type redefinition
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.hpp(19): message : see declaration of 'trimble::CAppliedArea'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.hpp(22,1): error C2059: syntax error: 'public'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.hpp(22,21): error C2059: syntax error: 'public'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.hpp(23,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.hpp(23,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(23,23): error C2653: 'CImplement': is not a class or namespace name
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(23,63): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(28,1): error C2550: 'trimble::CImplement': constructor initializer lists are only allowed on constructor definitions
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(29,1): warning C4508: 'trimble::CImplement': function should return a value; 'void' return type assumed
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(35,42): error C2653: 'CImplement': is not a class or namespace name
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(39,21): error C3861: 'GenerateImplementPos': identifier not found
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(39,3): error C3861: 'UpdateAppliedArea': identifier not found
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(47,35): error C2653: 'CImplement': is not a class or namespace name
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(50,34): error C2065: 'm_width': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(50,26): error C3861: 'LeftPos': identifier not found
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(51,36): error C2065: 'm_width': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(51,27): error C3861: 'RightPos': identifier not found
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(52,3): error C2065: 'CPolygon': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(52,12): error C2146: syntax error: missing ';' before identifier 'newPoly'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(52,12): error C2065: 'newPoly': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(52,38): error C2065: '_currLPos': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(53,38): error C2065: '_currRPos': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(55,38): error C2065: 'newRPos': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(52,22): error C3861: 'GeneratePolygon': identifier not found
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(59,25): error C2065: '_appliedArea': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(59,51): error C2065: 'newPoly': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(61,7): error C2065: '_isSpraying': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(64,5): error C2065: '_appliedArea': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(64,29): error C2065: 'newPoly': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(67,3): error C3861: 'SetAllNozzles': identifier not found
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(69,3): error C2065: '_isSpraying': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(70,3): error C2065: '_currPos': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(71,3): error C2065: '_currHeading': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(72,3): error C2065: '_currRPos': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(72,15): error C2065: 'newRPos': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(73,3): error C2065: '_currLPos': undeclared identifier
