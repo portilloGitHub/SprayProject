@@ -123,6 +123,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Implement.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\AppliedArea.hpp" />
+    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\EnuPosition.hpp" />
+    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Implement.hpp" />
+    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Tractor.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
