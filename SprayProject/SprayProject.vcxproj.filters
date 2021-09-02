@@ -15,21 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Implement.cpp">
+    <ClCompile Include="Implement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\AppliedArea.hpp">
+    <ClInclude Include="AppliedArea.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\EnuPosition.hpp">
+    <ClInclude Include="EnuPosition.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Implement.hpp">
+    <ClInclude Include="Implement.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Tractor.hpp">
+    <ClInclude Include="Tractor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

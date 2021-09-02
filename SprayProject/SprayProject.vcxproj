@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Implement.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppliedArea.hpp" />
+    <ClInclude Include="EnuPosition.hpp" />
+    <ClInclude Include="Implement.hpp" />
+    <ClInclude Include="Tractor.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{5B5F5E6D-1F49-42DD-8F5D-4DC324F845D0}</ProjectGuid>
@@ -122,15 +131,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Implement.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\AppliedArea.hpp" />
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\EnuPosition.hpp" />
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Implement.hpp" />
-    <ClInclude Include="..\..\Trimble Ag Dev Scenario\Trimble Ag Dev Scenario\Tractor.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
