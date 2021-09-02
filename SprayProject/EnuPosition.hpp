@@ -33,7 +33,7 @@ namespace trimble
 			{
 			case 0: return _east; break;
 			case 1: return _north; break;
-			case 2: return _up : break;
+			case 2: return _up; break;
 			}
 		}
 
