@@ -47,7 +47,7 @@ public:
   void RegisterListener(ITractorPositionListener* listener);
   void UnregisterListener(ITractorPositionListener* listener);
 
-  // Must be called at regular interval
+  // Must be called at regular interval: ~5Hz (200ms)
   void PeriodicUpdate();
 
 private:

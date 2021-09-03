@@ -14,12 +14,10 @@
 
 namespace trimble
 {
-
-
 	//-----------------------------------------------------------------------------
 	// Class
 	//-----------------------------------------------------------------------------
-	public CImplement : public ITractorPositionListener
+	class CImplement : public ITractorPositionListener
 	{
 	public:
 	  CImplement(double width, double distanceToTractor);
