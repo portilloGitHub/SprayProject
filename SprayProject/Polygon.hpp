@@ -19,7 +19,9 @@ namespace trimble
 	class CPolygon
 	{
 	public:
-		CPolygon();
+		CPolygon() : {};
+
+
 
 	private:
 

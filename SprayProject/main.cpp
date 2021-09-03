@@ -6,8 +6,7 @@
 
 using namespace trimble;
 
-// width = 120 foot
-// distance to tractor = 
+
 int main()
 {
 	double boomWidth = 120; // Feet

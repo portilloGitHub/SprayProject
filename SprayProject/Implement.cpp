@@ -25,8 +25,7 @@ namespace trimble
 		_DistanceToTractor(distanceToTractor),
 		_currHeading(0.0),
 		_isSpraying(false)
-	{
-	}
+	{}
 
 
 	//-----------------------------------------------------------------------------
@@ -47,8 +46,8 @@ namespace trimble
 	void CImplement::UpdateAppliedArea(const CEnuPosition& newImplementPos,
 		double heading)
 	{
-		CEnuPosition newLPos = LeftPos(m_width / 2);
-		CEnuPosition newRtPos = RightPos(m_width / 2);
+		CEnuPosition newLPos = LeftPos(_Width / 2);
+		CEnuPosition newRPos = RightPos(_Width / 2);
 		CPolygon newPoly = GeneratePolygon(_currLPos,
 			_currRPos,
 			newLPos,
