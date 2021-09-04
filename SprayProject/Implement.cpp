@@ -71,5 +71,15 @@ namespace trimble
 		_currRPos = newRPos;
 		_currLPos = newLPos;
 	}
+
+	// Member function: SetAllNozzles
+	void CImplement::SetAllNozzles(bool val)
+	{
+		// Section turns on / off all nozzles.
+		// This section should talk to the low level hardware in some manner
+		// Example: 12 Nozzles are all on GPIO Port B & PORT B is a 16 bit register
+		// ON => GPIO_PORTB = 0x0C
+		// OFF => GPIO_PORTB = 0x00
+	}
 }
 
