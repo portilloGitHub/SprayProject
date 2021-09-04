@@ -29,7 +29,7 @@ namespace trimble
 	  double DistanceToTractor() const { return _DistanceToTractor; }
 
 	  // Retrieves the current position of the implement (center)
-	  CEnuPosition Position() const { return _currPos; }
+	  CEnuPosition getPosition() const { return _currPos; }
 
 	  // Retrieve the area where spray has been applied
 	  const CAppliedArea& AppliedArea() const { return _appliedArea; }

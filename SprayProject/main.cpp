@@ -10,15 +10,22 @@ using namespace trimble;
 // Distance to tractor = 5
 // Placeholder for testing:
 // TODO: These values should be pulled from a table or database
+static CTractor tractor = CTractor();
 static CImplement implement = CImplement(120,5);
 
 
 int main()
 {
-	// Infinite loop to monitor current position and
-	//	control spray nozels 
+	// (1) Implement is calibrated with Boom width 120' and distance to tractor at 5'
+	// (2) Implement sends command to handle new tractor position and heading 
+	// Infinite loop to monitor current position
+
 	for (;;)
 	{
+		// Keep updating vehicle every 5Hz
+		tractor.PeriodicUpdate();
+		implement.HandleNewTractorPosition(tractor.Position(), tractor.Heading());
+
 		// TODO: add timmer for 5Hz (~200ms)
 	}
 	return 0;

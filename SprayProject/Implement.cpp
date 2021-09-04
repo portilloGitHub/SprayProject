@@ -81,5 +81,33 @@ namespace trimble
 		// ON => GPIO_PORTB = 0x0C
 		// OFF => GPIO_PORTB = 0x00
 	}
+
+	// Return implement offset calculations
+	CEnuPosition CImplement::GenerateImplementPos(const CEnuPosition& tractorPos, double heading) const
+	{
+		// Assume Y+ faces the front of the tractor
+		// Assume implement is staticly attached to back of tractor
+		//
+		// TODO: Calculate the X,Y,Z position of the trctor with staticaly attached implement
+		//		 Take into account the heading and perform heading calculations to ensure vehicle / implement 
+		//		 orientation does not change when heading is changed.
+		
+	
+		//	Variables
+		double implementEast = 0.0;
+		double implementNorth = 0.0;
+		double implementUp = 0.0;
+
+		// Math
+		// Performe offset with heading corrections
+		// CEnuPosition will need to convert LLA units to XYZ
+		// implementEast = offsetEast_calculations
+		// implementNorth = offsetNorth_calcuations
+		// implementUp = offsetUp_calcuations
+
+		CEnuPosition implementPos = CEnuPosition(implementEast,implementNorth, implementUp);
+		return implementPos;
+	}
+
 }
 

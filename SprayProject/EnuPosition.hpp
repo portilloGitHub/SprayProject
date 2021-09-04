@@ -26,9 +26,10 @@ namespace trimble
 		CEnuPosition(double east, double north, double up) :
 			_east(east), _north(north), _up(up) {}
 
-		double East() const { return _east; }
-		double North() const { return _north; }
-		double Up() const { return _up; }
+		// Added get to make this easier to understand
+		double getEast() const { return _east; }
+		double getNorth() const { return _north; }
+		double getUp() const { return _up; }
 
 
 		double& operator[](unsigned int i)
