@@ -46,8 +46,8 @@ namespace trimble
 	void CImplement::UpdateAppliedArea(const CEnuPosition& newImplementPos,
 		double heading)
 	{
-		CEnuPosition newLPos = LeftPos(_Width / 2);
-		CEnuPosition newRPos = RightPos(_Width / 2);
+		CEnuPosition newLPos = getLeftPos(_Width / 2);
+		CEnuPosition newRPos = getRightPos(_Width / 2);
 		CPolygon newPoly = GeneratePolygon(_currLPos,
 			_currRPos,
 			newLPos,

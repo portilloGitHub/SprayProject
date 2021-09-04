@@ -47,10 +47,10 @@ namespace trimble
 										  double heading) const;
 
 		// Gets a position to the left of the implement center
-		CEnuPosition LeftPos(double distanceFromCenter) const { return _currLPos; }
+		CEnuPosition getLeftPos(double distanceFromCenter) const { return _currLPos; }
 
 		// Gets a position to the right of the implement center
-		CEnuPosition RightPos(double distanceFromCenter) const { return _currRPos; }
+		CEnuPosition getRightPos(double distanceFromCenter) const { return _currRPos; }
 
 		// Generates a polygon given the where the implement ends were and are now
 		CPolygon GeneratePolygon(const CEnuPosition& backLeft,
