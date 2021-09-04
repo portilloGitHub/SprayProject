@@ -42,7 +42,6 @@ namespace trimble
 			}
 		}
 
-
 		// Create classes for CLlaPos & CXyzPos
 		// These should calculate and mamange the distance from home origin
 		// TODO: DOCUMENT THIS SECTION with workflows and theory 
