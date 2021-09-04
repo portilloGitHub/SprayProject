@@ -8,6 +8,9 @@
 #ifndef _ENUPOSITION_HPP_
 #define _ENUPOSITION_HPP_
 
+// Home:	LLA => (38.9222081,-94.7588143,330) Olathe, MO sea level in meters
+//			XYZ => (0,0,0) 
+
 namespace trimble
 {
 
@@ -27,6 +30,7 @@ namespace trimble
 		double North() const { return _north; }
 		double Up() const { return _up; }
 
+
 		double& operator[](unsigned int i)
 		{
 			switch (i)
@@ -37,8 +41,15 @@ namespace trimble
 			}
 		}
 
-		void FromLLA(const CLlaPos& llaPos);
-		void FromXYZ(const CXyzPos& xyzPos);
+		// Create classes for CLlaPos & CXyzPos
+		// These should calculate and mamange the distance from home origin
+		// TODO: DOCUMENT THIS SECTION with workflows and theory 
+		// TODO: Get this done via psudeo code
+		void FromLLA(const CLlaPos& llaPos); // (degree,degree,meter)
+		void FromXYZ(const CXyzPos& xyzPos); // (meter,meter,meter)
+		// End section
+
+	private:
 
 		double _east;
 		double _north;

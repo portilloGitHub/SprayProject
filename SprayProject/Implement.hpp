@@ -8,6 +8,8 @@
 #ifndef _IMPLEMENT_HPP_
 #define _IMPLEMENT_HPP_
 
+#include <stdio.h>
+
 #include "EnuPosition.hpp"
 #include "AppliedArea.hpp"
 #include "Tractor.hpp"
@@ -67,9 +69,9 @@ namespace trimble
 		const double  _DistanceToTractor;
 		double        _currHeading;
 		bool          _isSpraying;
-		CENUPosition  _currPos;
-		CENUPosition  _currLPos;
-		CENUPosition  _currRPos;
+		CEnuPosition  _currPos;
+		CEnuPosition  _currLPos;
+		CEnuPosition  _currRPos;
 		CAppliedArea  _appliedArea;
 	};
 

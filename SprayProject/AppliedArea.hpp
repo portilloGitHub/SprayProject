@@ -8,6 +8,7 @@
 #ifndef _APPLIEDAREA_HPP_
 #define _APPLIEDAREA_HPP_
 
+#include <vector>
 #include "Polygon.hpp"
 
 namespace trimble

@@ -20,7 +20,7 @@ namespace trimble
 	{
 	public:
 		CPolygon() : {};
-
+		~CPolygon() : {};
 
 
 	private:
