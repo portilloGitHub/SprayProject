@@ -43,8 +43,8 @@ namespace trimble
 		// These should calculate and mamange the distance from home origin
 		// TODO: DOCUMENT THIS SECTION with workflows and theory 
 		// TODO: Get this done via psudeo code
-		void FromLLA(const CLlaPos& llaPos); // (degree,degree,meter)
-		void FromXYZ(const CXyzPos& xyzPos); // (meter,meter,meter)
+		void FromLLA(const CLlaPos& llaPos); // Geodetic (Lat,Long,meter)
+		void FromXYZ(const CXyzPos& xyzPos); // ENU (meter,meter,meter)
 		// End section
 
 	private:

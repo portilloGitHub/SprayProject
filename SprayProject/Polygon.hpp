@@ -9,6 +9,7 @@
 #define _POLYGON_HPP_
 
 #include "Polygon.hpp"
+#include "EnuPosition.hpp"
 
 namespace trimble
 {

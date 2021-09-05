@@ -20,11 +20,12 @@ namespace trimble
 	//-----------------------------------------------------------------------------
 	// CImplement Constructor
 	//-----------------------------------------------------------------------------
-	CImplement::CImplement(double width, double distanceToTractor) :
+	CImplement::CImplement(double width, double distanceToTractor,int numNozzles) :
 		_Width(width),
 		_DistanceToTractor(distanceToTractor),
 		_currHeading(0.0),
-		_isSpraying(false)
+		_isSpraying(false),
+		_numNozzles(numNozzles)
 	{}
 
 
@@ -51,7 +52,8 @@ namespace trimble
 		CPolygon newPoly = GeneratePolygon(_currLPos,
 			_currRPos,
 			newLPos,
-			newRPos);
+			newRPos,
+			_numNozzles);
 
 		// Turn the nozzles off if the spray polygon overlaps where we've already
 		// sprayed
@@ -72,6 +74,14 @@ namespace trimble
 		_currLPos = newLPos;
 	}
 
+	CPolygon CImplement::GeneratePolygon(	const CEnuPosition& backLeft, 
+											const CEnuPosition& backRight, 
+											const CEnuPosition& frontLeft, 
+											const CEnuPosition& frontRight) const
+	{
+		return CPolygon();
+	}
+
 	// Member function: SetAllNozzles
 	void CImplement::SetAllNozzles(bool val)
 	{
@@ -85,26 +95,27 @@ namespace trimble
 	// Return implement offset calculations
 	CEnuPosition CImplement::GenerateImplementPos(const CEnuPosition& tractorPos, double heading) const
 	{
-		// Assume Y+ faces the front of the tractor
-		// Assume implement is staticly attached to back of tractor
-		//
-		// TODO: Calculate the X,Y,Z position of the trctor with staticaly attached implement
-		//		 Take into account the heading and perform heading calculations to ensure vehicle / implement 
-		//		 orientation does not change when heading is changed.
+		// Assume: CEnuPositon correctly provides X,Y,Z in meters
+		// TODO: Apply the implement offset values 
+		//		(1) Width
+		//		(2) DistnaceToImplement
 		
 	
-		//	Variables
+		// Variables 
 		double implementEast = 0.0;
 		double implementNorth = 0.0;
-		double implementUp = 0.0;
+		double implementUp = tractorPos.getUp; // Do we care about altitude? 
 
 		// Math
-		// Performe offset with heading corrections
-		// CEnuPosition will need to convert LLA units to XYZ
-		// implementEast = offsetEast_calculations
-		// implementNorth = offsetNorth_calcuations
-		// implementUp = offsetUp_calcuations
-
+		// TODO: Performe the math to accomidate heading to the established ENU units. 
+		// Example that needs testing:
+		implementEast = tractorPos.getEast * sin(heading);
+		implementNorth = tractorPos.getNorth * cos(heading);
+		// More time is needed to add DistanceToImplement with the corrected ENU values
+		// Will proable need an extesive rotation and translation matrix for correct calucalations
+		
+		
+		// RETURN: Correct ENU units for the implement accounting for heading
 		CEnuPosition implementPos = CEnuPosition(implementEast,implementNorth, implementUp);
 		return implementPos;
 	}

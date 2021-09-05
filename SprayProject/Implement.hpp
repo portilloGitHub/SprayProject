@@ -22,7 +22,7 @@ namespace trimble
 	class CImplement : public ITractorPositionListener
 	{
 	public:
-	  CImplement(double width, double distanceToTractor);
+	  CImplement(double width, double distanceToTractor, int numNozzles);
 
 	  // Retrieve configured width and distance to tractor
 	  double Width() const { return _Width; }
@@ -56,7 +56,8 @@ namespace trimble
 		CPolygon GeneratePolygon(const CEnuPosition& backLeft,
 								 const CEnuPosition& backRight,
 								 const CEnuPosition& frontLeft,
-								 const CEnuPosition& frontRight) const;
+								 const CEnuPosition& frontRight,
+								 const int numNozzles) const;
 
 		// Turns all the nozzles on or off so they activly start or stop spraying
 		void SetAllNozzles(bool on);
@@ -69,6 +70,7 @@ namespace trimble
 		const double  _DistanceToTractor;
 		double        _currHeading;
 		bool          _isSpraying;
+		int			  _numNozzles;
 
 		// Upon decleration, _currPos / _currLPos / _currRPos
 		// are set to the current ENU coordinates received from the 

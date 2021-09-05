@@ -11,7 +11,7 @@ using namespace trimble;
 // Placeholder for testing:
 // TODO: These values should be pulled from a table or database
 static CTractor tractor = CTractor();
-static CImplement implement = CImplement(120,5);
+static CImplement implement = CImplement(120,5,12);
 
 
 int main()
