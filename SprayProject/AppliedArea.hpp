@@ -28,12 +28,14 @@ namespace trimble
 		
 		// Serach throught the vector list and compare if current ENU position 
 		// matches any vector ENU postions
+		// TODO: R&D on better methods to iterate and compare vector data
+		//			Search logic should be added in ApplieArea.cpp
 		bool CheckOverlap(const CPolygon& poly) const;
 
 	private:
 		// TODO not sure if this is the proper container
 		std::vector<CPolygon> CPolygonVector;
-		CPolygonVector _polygons;
+		//CPolygonVector _polygons;
 	};
 
 
