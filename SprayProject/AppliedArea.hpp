@@ -23,7 +23,11 @@ namespace trimble
 	public:
 		CAppliedArea();
 
-		void AddPolygon(const CPolygon& poly);
+		// Add new polygon info to the vector list
+		void AddPolygon(const CPolygon& poly);			
+		
+		// Serach throught the vector list and compare if current ENU position 
+		// matches any vector ENU postions
 		bool CheckOverlap(const CPolygon& poly) const;
 
 	private:

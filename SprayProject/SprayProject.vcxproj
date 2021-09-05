@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AppliedArea.cpp" />
     <ClCompile Include="EnuPosition.cpp" />
     <ClCompile Include="Implement.cpp" />
     <ClCompile Include="main.cpp" />
