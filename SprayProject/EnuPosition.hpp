@@ -8,9 +8,6 @@
 #ifndef _ENUPOSITION_HPP_
 #define _ENUPOSITION_HPP_
 
-// Home:	LLA => (38.9222081,-94.7588143,330) Olathe, MO sea level in meters
-//			XYZ => (0,0,0) 
-
 namespace trimble
 {
 
@@ -26,7 +23,7 @@ namespace trimble
 		CEnuPosition(double east, double north, double up) :
 			_east(east), _north(north), _up(up) {}
 
-		// Added get to make this easier to understand
+		// Added "get" to make this easier to understand
 		double getEast() const { return _east; }
 		double getNorth() const { return _north; }
 		double getUp() const { return _up; }

@@ -69,9 +69,18 @@ namespace trimble
 		const double  _DistanceToTractor;
 		double        _currHeading;
 		bool          _isSpraying;
+
+		// Upon decleration, _currPos / _currLPos / _currRPos
+		// are set to the current ENU coordinates received from the 
+		// GPS receiver.
+		// The data is stored in a vector -> 
+		// UpdateAppliedArea() updates the class object
+		// Format: East / North / Up
 		CEnuPosition  _currPos;
 		CEnuPosition  _currLPos;
 		CEnuPosition  _currRPos;
+
+		// 
 		CAppliedArea  _appliedArea;
 	};
 
