@@ -47,7 +47,7 @@ namespace trimble
 										  double heading) const;
 
 		// Gets a position to the left of the implement center
-		CEnuPosition getLeftPos(double distanceFromCenter) const { return _currLPos; }
+		CEnuPosition getLeftPos(double distanceFromCenter) const { return _currLPos;  }
 
 		// Gets a position to the right of the implement center
 		CEnuPosition getRightPos(double distanceFromCenter) const { return _currRPos; }

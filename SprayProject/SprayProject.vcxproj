@@ -23,6 +23,7 @@
     <ClCompile Include="EnuPosition.cpp" />
     <ClCompile Include="Implement.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Polygon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppliedArea.hpp" />

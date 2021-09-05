@@ -35,9 +35,11 @@ namespace trimble
 	void CImplement::HandleNewTractorPosition(const CEnuPosition& tractorPos,
 		double heading)
 	{
-		//...
+		// (1) Send the latest tractor ENU position and heading to GenerateImplementPos
+		//		Will return corrected ENU values accounting for heading
+		// (2) Send the corrected ENU implement values with heading to update spray applied area
+		//		This will perfome the logic to either spray the area or not
 		UpdateAppliedArea(GenerateImplementPos(tractorPos, heading), heading);
-		//...
 	}
 
 
@@ -47,6 +49,8 @@ namespace trimble
 	void CImplement::UpdateAppliedArea(const CEnuPosition& newImplementPos,
 		double heading)
 	{
+		
+		// Get updated L&R ENU Position values and calculate the new polygon if necessary
 		CEnuPosition newLPos = getLeftPos(_Width / 2);
 		CEnuPosition newRPos = getRightPos(_Width / 2);
 		CPolygon newPoly = GeneratePolygon(_currLPos,
@@ -77,9 +81,11 @@ namespace trimble
 	CPolygon CImplement::GeneratePolygon(	const CEnuPosition& backLeft, 
 											const CEnuPosition& backRight, 
 											const CEnuPosition& frontLeft, 
-											const CEnuPosition& frontRight) const
+											const CEnuPosition& frontRight,
+											const int numNozzles) const
 	{
-		return CPolygon();
+		CPolygon newPolygon = CPolygon( backLeft, backRight, frontLeft, frontRight, numNozzles);
+		return newPolygon.getArea();
 	}
 
 	// Member function: SetAllNozzles
