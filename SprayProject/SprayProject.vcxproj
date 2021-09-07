@@ -24,6 +24,7 @@
     <ClCompile Include="Implement.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Polygon.cpp" />
+    <ClCompile Include="Tractor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppliedArea.hpp" />

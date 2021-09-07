@@ -57,15 +57,20 @@ namespace trimble
 			_currRPos,
 			newLPos,
 			newRPos,
-			_numNozzles);
+			_Width,
+			_numNozzles,
+			heading);
 
-		// Turn the nozzles off if the spray polygon overlaps where we've already
-		// sprayed
-		bool turnNozzlesOn = !_appliedArea.CheckOverlap(newPoly);
+		// Turn the nozzles off if the spray polygon overlaps where we've already sprayed
+		//bool turnNozzlesOn = !_appliedArea.CheckOverlap(newPoly);
+		// Return a hex value to send to a control register on the MCU
+		int turnNozzlesOn = _appliedArea.CheckOverlap(newPoly);
 
-		if (_isSpraying)
+		// 
+		if (turnNozzlesOn > 0x00)
 		{
-			// The spray we've got overlaps - turn off the nozzles
+			// ENU point is not in a sprayed area.
+			// Update the poylgon vector
 			_appliedArea.AddPolygon(newPoly);
 		}
 
@@ -82,9 +87,12 @@ namespace trimble
 											const CEnuPosition& backRight, 
 											const CEnuPosition& frontLeft, 
 											const CEnuPosition& frontRight,
-											const int numNozzles) const
+											const double Width,
+											const int numNozzles,
+											const double heading
+											) const
 	{
-		CPolygon newPolygon = CPolygon( backLeft, backRight, frontLeft, frontRight, numNozzles);
+		CPolygon newPolygon = CPolygon( backLeft, backRight, frontLeft, frontRight, Width, numNozzles, heading);
 		return newPolygon.getArea();
 	}
 

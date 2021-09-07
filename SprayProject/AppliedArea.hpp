@@ -30,12 +30,23 @@ namespace trimble
 		// matches any vector ENU postions
 		// TODO: R&D on better methods to iterate and compare vector data
 		//			Search logic should be added in ApplieArea.cpp
-		bool CheckOverlap(const CPolygon& poly) const;
+		int CheckOverlap(const CPolygon& poly);
+
 
 	private:
 		// TODO not sure if this is the proper container
 		std::vector<CPolygon> CPolygonVector;
+		std::vector<CEnuPosition> enuCentroidVector;
 		//CPolygonVector _polygons;
+
+		void findCentroidOfPolygon(const CPolygon& poly);
+
+		int testCentroid(const CPolygon& poly);
+
+		bool isOnBorder(const CPolygon& poly);
+
+		bool isInsidePolygon(const CPolygon& poly);
+		
 	};
 
 

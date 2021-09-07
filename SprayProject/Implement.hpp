@@ -57,7 +57,9 @@ namespace trimble
 								 const CEnuPosition& backRight,
 								 const CEnuPosition& frontLeft,
 								 const CEnuPosition& frontRight,
-								 const int numNozzles) const;
+								 const double width,
+								 const int numNozzles,
+								 const double heading) const;
 
 		// Turns all the nozzles on or off so they activly start or stop spraying
 		void SetAllNozzles(bool on);

@@ -1,44 +1,104 @@
-﻿  Implement.cpp
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(40,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(40,29): error C2143:  syntax error: missing ',' before '&'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(41,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(41,29): error C2143:  syntax error: missing ',' before '&'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.hpp(28,1): error C2059:  syntax error: '}'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.hpp(28,1): error C2143:  syntax error: missing ';' before '}'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(30,8): error C2039:  'vector': is not a member of 'std'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\predefined C++ types (compiler internal)(261): message :  see declaration of 'std'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(30,14): error C2143:  syntax error: missing ';' before '<'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(30,14): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(30,39): error C2238:  unexpected token(s) preceding ';'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(31,27): error C3646:  '_polygons': unknown override specifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(31,27): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.hpp(22,2): error C2059:  syntax error: 'public'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.hpp(22,22): error C2059:  syntax error: 'public'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.hpp(23,2): error C2143:  syntax error: missing ';' before '{'
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.hpp(23,2): error C2447:  '{': missing function header (old-style formal list?)
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(23,24): error C2653:  'CImplement': is not a class or namespace name
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(23,65): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(28,2): error C2550:  'trimble::CImplement': constructor initializer lists are only allowed on constructor definitions
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(29,2): warning C4508:  'trimble::CImplement': function should return a value; 'void' return type assumed
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(35,43): error C2653:  'CImplement': is not a class or namespace name
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(39,21): error C3861:  'GenerateImplementPos': identifier not found
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(39,3): error C3861:  'UpdateAppliedArea': identifier not found
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(47,36): error C2653:  'CImplement': is not a class or namespace name
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(50,34): error C2065:  'm_width': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(50,26): error C3861:  'LeftPos': identifier not found
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(51,36): error C2065:  'm_width': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(51,27): error C3861:  'RightPos': identifier not found
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(52,38): error C2065:  '_currLPos': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(53,4): error C2065:  '_currRPos': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(55,4): error C2065:  'newRPos': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(52,22): error C3861:  'GeneratePolygon': identifier not found
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(59,25): error C2065:  '_appliedArea': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(61,7): error C2065:  '_isSpraying': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(64,4): error C2065:  '_appliedArea': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(67,3): error C3861:  'SetAllNozzles': identifier not found
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(69,3): error C2065:  '_isSpraying': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(70,3): error C2065:  '_currPos': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(71,3): error C2065:  '_currHeading': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(72,3): error C2065:  '_currRPos': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(72,15): error C2065:  'newRPos': undeclared identifier
-C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(73,3): error C2065:  '_currLPos': undeclared identifier
+﻿  AppliedArea.cpp
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(41,41): error C2143:  syntax error: missing ')' before 'const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(41,41): error C2660:  'trimble::CAppliedArea::testCentroid': function does not take 0 arguments
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(44,7): message :  see declaration of 'trimble::CAppliedArea::testCentroid'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(41,41): error C2143:  syntax error: missing ';' before 'const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(41,62): error C2059:  syntax error: ')'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(41,63): error C2082:  redefinition of formal parameter 'poly'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(41,63): error C2530:  'poly': references must be initialized
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(55,18): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(82,93): error C3867:  'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(82,93): error C2440:  '<function-style-cast>': cannot convert from 'initializer list' to 'trimble::CEnuPosition'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(82,93): message :  No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(90,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(92,19): error C2143:  syntax error: missing ')' before 'const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(92,8): error C3861:  'isOnBorder': identifier not found
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(92,7): error C2059:  syntax error: ')'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(92,41): error C2059:  syntax error: ')'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(94,32): error C2059:  syntax error: ';'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(96,4): error C2181:  illegal else without matching if
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(96,29): error C2143:  syntax error: missing ')' before 'const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(96,12): error C2660:  'trimble::CAppliedArea::isInsidePolygon': function does not take 0 arguments
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.hpp(48,8): message :  see declaration of 'trimble::CAppliedArea::isInsidePolygon'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(96,12): error C2059:  syntax error: ')'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(96,51): error C2059:  syntax error: ')'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(98,32): error C2059:  syntax error: ';'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(101,2): error C2059:  syntax error: '}'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(101,2): error C2143:  syntax error: missing ';' before '}'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(103,31): error C2653:  'CAppliedArea': is not a class or namespace name
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(104,2): error C2143:  syntax error: missing ';' before '{'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(104,2): error C2447:  '{': missing function header (old-style formal list?)
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(111,36): error C2653:  'CAppliedArea': is not a class or namespace name
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(111,51): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(111,51): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(118,1): error C2059:  syntax error: '}'
+  EnuPosition.cpp
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\AppliedArea.cpp(118,1): error C2143:  syntax error: missing ';' before '}'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+  Implement.cpp
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(96,28): error C2039:  'getArea': is not a member of 'trimble::CPolygon'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.hpp(22): message :  see declaration of 'trimble::CPolygon'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(121,40): error C3867:  'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(126,52): error C3867:  'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(126,52): error C2296:  '*': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(127,54): error C3867:  'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+  main.cpp
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Implement.cpp(127,54): error C2296:  '*': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+  Polygon.cpp
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(58,44): error C3867:  'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(58,44): error C2296:  '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(59,28): error C3867:  'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(59,28): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(59,20): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(60,22): error C3867:  'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(60,22): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(60,17): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(65,26): error C3867:  'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(65,26): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(65,19): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(66,46): error C3867:  'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(66,46): error C2296:  '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(67,22): error C3867:  'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(67,22): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(67,17): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(72,44): error C3867:  'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(72,44): error C2296:  '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(73,28): error C3867:  'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(73,28): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(73,20): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(74,22): error C3867:  'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(74,22): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(74,17): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(79,26): error C3867:  'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(79,26): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(79,19): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(80,46): error C3867:  'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(80,46): error C2296:  '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(81,22): error C3867:  'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(81,22): error C2440:  '=': cannot convert from 'double (__thiscall trimble::CEnuPosition::* )(void) const' to 'double'
+  Tractor.cpp
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\Polygon.cpp(81,17): message :  There is no context in which this conversion is possible
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(46,29): error C2143:  syntax error: missing ',' before '&'
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+  Generating Code...
+C:\Users\porti\Documents\Trimble Code Project\SprayProject\SprayProject\EnuPosition.hpp(47,29): error C2143:  syntax error: missing ',' before '&'
