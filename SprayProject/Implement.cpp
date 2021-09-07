@@ -3,6 +3,9 @@
 ///
 /// Implements class trimble::CImplement.
 ///
+///	Description: CPP source file that adds functionality to the
+///		methods defined in Implement.hpp
+///
 /// Copyright (c) 2017 Trimble, Inc.
 //===========================================================================
 

@@ -3,6 +3,8 @@
 ///
 /// Declares class trimble::CImplement.
 ///
+/// Description: Class to handle implement functionality
+///
 /// Copyright (c) 2017 Trimble, Inc.
 //============================================================================
 #ifndef _IMPLEMENT_HPP_
