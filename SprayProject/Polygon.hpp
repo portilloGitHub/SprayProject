@@ -54,7 +54,7 @@ namespace trimble
 		const int _numNozzles;
 		const double _Width,_Heading;
 
-		CEnuPosition offsetENUPoints(const CEnuPosition& enuData);
+		CEnuPosition offsetENUPoints(CEnuPosition& enuData);
 	};
 }
 

@@ -31,6 +31,10 @@ namespace trimble
 		double getNorth() const { return _north; }
 		double getUp() const { return _up; }
 
+		// Create some setter functionality
+		double setEast(double east) { _east = east; }
+		double setNorth(double north) { _north = north; }
+		double setUp(double up) { _up = up; }
 
 		double& operator[](unsigned int i)
 		{
@@ -48,8 +52,7 @@ namespace trimble
 		void FromXYZ(const CXyzPos& xyzPos); // ENU (meter,meter,meter)
 		// End section
 
-	private:
-
+	private: 
 		double _east;
 		double _north;
 		double _up;

@@ -49,10 +49,10 @@ namespace trimble
 										  double heading) const;
 
 		// Gets a position to the left of the implement center
-		CEnuPosition getLeftPos(double distanceFromCenter) const { return _currLPos;  }
+		CEnuPosition getLeftPos(double distanceFromCenter, double heading);
 
 		// Gets a position to the right of the implement center
-		CEnuPosition getRightPos(double distanceFromCenter) const { return _currRPos; }
+		CEnuPosition getRightPos(double distanceFromCenter, double heading);
 
 		// Generates a polygon given the where the implement ends were and are now
 		CPolygon GeneratePolygon(const CEnuPosition& backLeft,
@@ -64,7 +64,7 @@ namespace trimble
 								 const double heading) const;
 
 		// Turns all the nozzles on or off so they activly start or stop spraying
-		void SetAllNozzles(bool on);
+		void SetNozzles(int hexVal);
 
 		// Updates the applied area given a new implement position and heading
 		void UpdateAppliedArea(const CEnuPosition& newImplementPos, double heading);
@@ -85,6 +85,11 @@ namespace trimble
 		CEnuPosition  _currPos;
 		CEnuPosition  _currLPos;
 		CEnuPosition  _currRPos;
+		CEnuPosition  _returnPos;
+
+		// Establishes the postion of all the nozzels evenly spaced out
+		std::vector<CEnuPosition> vectorOfNozzles;
+		CEnuPosition GenerateIndividualNozzles(const CEnuPosition leftNozzle, double heading);
 
 		// 
 		CAppliedArea  _appliedArea;

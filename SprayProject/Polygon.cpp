@@ -26,6 +26,31 @@ namespace trimble
 			if (i == 0)
 			{
 				// Home polygon
+				// Only offest the very first _oldLeft & _newLeft data points.
+				// We are calibrating the spray area at this point and using that as our polygon area
+				// The other points will be processed by offsetENUPoints
+				// ASSUME: Heading in {0,90,180,270} in clockwise rotation
+				if (_Heading == 0)
+				{
+					_oldLeft.setEast = _oldLeft.getEast - ((_Width / _numNozzles) / 2);
+					_newLeft.setEast = _newLeft.getEast - ((_Width / _numNozzles) / 2);
+				}
+				else if (_Heading == 90)
+				{
+					_oldLeft.setNorth = _oldLeft.getNorth + ((_Width / _numNozzles) / 2);
+					_newLeft.setNorth = _newLeft.getNorth + ((_Width / _numNozzles) / 2);
+				}
+				if (_Heading == 180)
+				{
+					_oldLeft.setEast = _oldLeft.getEast + ((_Width / _numNozzles) / 2);
+					_newLeft.setEast = _newLeft.getEast + ((_Width / _numNozzles) / 2);
+				}
+				else if (_Heading == 270)
+				{
+					_oldLeft.setNorth = _oldLeft.getNorth - ((_Width / _numNozzles) / 2);
+					_newLeft.setNorth = _newLeft.getNorth - ((_Width / _numNozzles) / 2);
+				}
+
 				temp.push_back(_oldLeft);
 				temp.push_back(_newLeft);
 				temp.push_back(offsetENUPoints(_newLeft)); // Becomes the next new left
@@ -47,41 +72,37 @@ namespace trimble
 	}
 
 	// Performes offset calcuations for each nozzel based on heading 
-	CEnuPosition CPolygon::offsetENUPoints(const CEnuPosition& enuData)
+	CEnuPosition CPolygon::offsetENUPoints(CEnuPosition& enuData)
 	{
-		double east, north, up;
-		double spacingDistnace = (_Width / _numNozzles);
+		// Example: 120" / 12" = 10" spacing
+		double spacingDistnace = (_Width / _numNozzles); 
 
 		if (_Heading == 0)
 		{
 			// Positive North
-			east = enuData.getEast + spacingDistnace;
-			north = enuData.getNorth;
-			up = enuData.getUp;
+			enuData.setEast = enuData.getEast + spacingDistnace;
+			enuData.setNorth = enuData.getNorth;
 		}
 		else if (_Heading == 90)
 		{
 			// Positive East
-			east = enuData.getEast;
-			north = enuData.getNorth - spacingDistnace;
-			up = enuData.getUp;
+			enuData.setEast = enuData.getEast;
+			enuData.setNorth = enuData.getNorth - spacingDistnace;
 		}
 		else if (_Heading == 180)
 		{
 			// Negative North
-			east = enuData.getEast - spacingDistnace;
-			north = enuData.getNorth;
-			up = enuData.getUp;
+			enuData.setEast = enuData.getEast - spacingDistnace;
+			enuData.setNorth = enuData.getNorth;
 		}
 		else if (_Heading == 270)
 		{
 			// Negative East
-			east = enuData.getEast;
-			north = enuData.getNorth + spacingDistnace;
-			up = enuData.getUp;
+			enuData.setEast = enuData.getEast;
+			enuData.setNorth = enuData.getNorth + spacingDistnace;
 		}
 
-		CEnuPosition correctedENUPoints = CEnuPosition(east, north, up);
+		enuData.setUp = enuData.getUp;
 	}
 }
 
