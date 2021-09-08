@@ -42,10 +42,8 @@ namespace trimble
 			}
 		}
 
-		// Create classes for CLlaPos & CXyzPos
-		// These should calculate and mamange the distance from home origin
-		// TODO: DOCUMENT THIS SECTION with workflows and theory 
-		// TODO: Get this done via psudeo code
+		// TODO: Create classes for CLlaPos & CXyzPos
+		// These should set the _east, _north, and _up variables when called
 		void FromLLA(const CLlaPos& llaPos); // Geodetic (Lat,Long,meter)
 		void FromXYZ(const CXyzPos& xyzPos); // ENU (meter,meter,meter)
 		// End section
@@ -55,6 +53,10 @@ namespace trimble
 		double _east;
 		double _north;
 		double _up;
+
+		double convertLLAtoENU_E(const CLlaPos& llaPos);
+		double convertLLAtoENU_N(const CLlaPos& llaPos);
+		double convertLLAtoENU_U(const CLlaPos& llaPos);
 	};
 
 

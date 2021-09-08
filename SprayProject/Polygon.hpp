@@ -44,6 +44,8 @@ namespace trimble
 		std::vector<std::vector<CEnuPosition>> vectorOfNozzels;
 		CPolygon getPolygonVector();
 
+		
+
 	private:
 		CEnuPosition _oldLeft;
 		CEnuPosition _oldRight;

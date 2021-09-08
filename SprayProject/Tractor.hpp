@@ -34,7 +34,7 @@ namespace trimble
 	class CTractor
 	{
 	public:
-		CTractor();
+		CTractor() : _speed(0.0), _heading(0.0) {};
 		~CTractor() {};
 
 		// Retrieves the current speed of the tractor (in m/s)
