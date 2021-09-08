@@ -2,6 +2,8 @@
 * Simulation entry point to test trimble api
 **/
 
+#include <chrono>
+#include <thread>
 #include "Implement.hpp"
 
 using namespace trimble;
@@ -23,10 +25,15 @@ int main()
 	for (;;)
 	{
 		// Keep updating vehicle every 5Hz
+		
 		tractor.PeriodicUpdate();
 		implement.HandleNewTractorPosition(tractor.Position(), tractor.Heading());
 
-		// TODO: add timmer for 5Hz (~200ms)
+		// Represent a 200ms cylce.
+		// In practice, this should be handled by the listener class and some 
+		//		sort of scheduler or RTOS management system 
+
+		std::this_thread::sleep_for(std::chrono::microseconds(200)); // Windows C++ method. this will change for other platforms.
 	}
 	return 0;
 }

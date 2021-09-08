@@ -3,6 +3,9 @@
 ///
 /// Declares class trimble::CEnuPosition.
 ///
+/// Description: Class to process geospatial data to usable data for 
+///		points on the tractor and implement
+///
 /// Copyright (c) 2017 Trimble, Inc.
 //============================================================================
 #ifndef _ENUPOSITION_HPP_

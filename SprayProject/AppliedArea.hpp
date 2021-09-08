@@ -3,6 +3,8 @@
 ///
 /// Declares class trimble::CAppliedArea.
 ///
+/// Description:  Class to manage polygons based on overlapping areas
+///
 /// Copyright (c) 2017 Trimble, Inc.
 //============================================================================
 #ifndef _APPLIEDAREA_HPP_

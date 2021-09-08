@@ -96,7 +96,7 @@ namespace trimble
 											) const
 	{
 		CPolygon newPolygon = CPolygon( backLeft, backRight, frontLeft, frontRight, Width, numNozzles, heading);
-		return newPolygon.getArea();
+		return newPolygon.getPolygonVector();
 	}
 
 	// Member function: SetAllNozzles

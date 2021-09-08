@@ -3,6 +3,8 @@
 ///
 /// Declares class trimble::CTractor.
 ///
+/// Description: Class to handle tractor functionality
+///
 /// Copyright (c) 2017 Trimble, Inc.
 //============================================================================
 #ifndef _TRACTOR_HPP_
