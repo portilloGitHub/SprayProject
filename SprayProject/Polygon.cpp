@@ -6,7 +6,6 @@ namespace trimble
 {
 	CPolygon CPolygon::getPolygonVector()
 	{
-		std::vector<CEnuPosition> temp;
 		int spacingConstant = ((_Width / _numNozzles) * _nozzleNumber);
 		int sprayCoverage = (_Width / _numNozzles) / 2;
 
@@ -23,11 +22,12 @@ namespace trimble
 		// oldLeft -> newLeft -> newRight -> oldRight
 		// vector holds info {oldLeft,newLeft,newRight,oldRight}
 
-		// The other points will be processed by offsetENUPoints
+		// The other points will be processed by offset calculations from the left most valve
 		// ASSUME: Heading in {0,90,180,270} in clockwise rotation
 
-		// Special case.... need to start the left most polyon at the spray angle
-		// Assume spray angle is 10 degreees
+		// Spray Angle: Accounting for spray angle width. 
+		// ASSUME: Spray angle is 10 degress and valve is the mid point 
+		//			Adding +/- 5 degrees from the calculated spray valve
 		if (_Heading == 0)
 		{
 			// Establish polygon based on left most sprayCovearge

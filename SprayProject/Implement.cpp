@@ -53,7 +53,7 @@ namespace trimble
 		double heading)
 	{
 
-		// Get updated L&R ENU Position values, individual nozzel spacing and calculate the new polygon if necessary
+		// Get updated L&R ENU Position values and individual nozzel spacing
 		_currPos = newImplementPos;
 		CEnuPosition newLPos = getLeftPos((_Width / 2), heading); 
 		CEnuPosition newRPos = getRightPos((_Width / 2), heading);
@@ -105,6 +105,9 @@ namespace trimble
 		_currLPos = newLPos;
 	}
 
+	//-----------------------------------------------------------------------------
+	// CImplement::GeneratePolygon(...)
+	//-----------------------------------------------------------------------------
 	CPolygon CImplement::GeneratePolygon(	const CEnuPosition& backLeft, 
 											const CEnuPosition& backRight, 
 											const CEnuPosition& frontLeft, 
@@ -118,7 +121,9 @@ namespace trimble
 		return newPolygon.getPolygonVector();
 	}
 
-	// Member function: SetAllNozzles
+	//-----------------------------------------------------------------------------
+	// CImplement::SetNozzles(...)
+	//-----------------------------------------------------------------------------
 	void CImplement::SetNozzles(int hexVal)
 	{
 		// Section turns on / off all nozzles.
@@ -128,7 +133,9 @@ namespace trimble
 		// OFF => GPIO_PORTB = 0x00
 	}
 
-	// Return implement offset calculations
+	//-----------------------------------------------------------------------------
+	// CImplement::GenerateImplementPos(...)
+	//-----------------------------------------------------------------------------
 	CEnuPosition CImplement::GenerateImplementPos(const CEnuPosition& tractorPos, double heading) const
 	{
 		// Assume: CEnuPositon correctly provides X,Y,Z in meters
@@ -136,8 +143,6 @@ namespace trimble
 		//		(1) Width
 		//		(2) DistnaceToImplement
 
-
-		// Variables 
 		double implementEast = 0.0;
 		double implementNorth = 0.0;
 		double leftPos = 0.0;
@@ -146,15 +151,13 @@ namespace trimble
 		double feet2Meters = 0.3048;	// feet to meter conversion
 
 		// Math
-		// TODO: Performe the math to accomidate heading to the established ENU units. 
+		// TODO: Perform the math to accomidate heading to the established ENU units. 
 		// Example that needs testing:
 		// implementEast = tractorPos.getEast * sin(heading);
 		// implementNorth = tractorPos.getNorth * cos(heading);
-		// More time is needed to add DistanceToImplement with the corrected ENU values
 		// Will proable need an extesive rotation and translation matrix for correct calucalations
 		//
-		// ASSUME: Perfect headings 0, 90, 180, 270 degrees
-		// *Clockwise rotation
+		// ASSUME: Perfect headings 0, 90, 180, 270 degrees Clockwise rotation
 		if (heading == 0.0)
 		{
 			implementEast = tractorPos.getEast();
@@ -182,6 +185,9 @@ namespace trimble
 		return implementPos;
 	}
 
+	//-----------------------------------------------------------------------------
+	// CImplement::getLeftPos(...)
+	//-----------------------------------------------------------------------------
 	CEnuPosition CImplement::getLeftPos(double distanceFromCenter, double heading)
 	{
 		// ASSUME: Perfect headings in clockwise rotation
@@ -210,6 +216,9 @@ namespace trimble
 		return _returnPos;
 	}
 
+	//-----------------------------------------------------------------------------
+	// CImplement::getRightPos(...)
+	//-----------------------------------------------------------------------------
 	CEnuPosition CImplement::getRightPos(double distanceFromCenter, double heading)
 	{
 		// ASSUME: Perfect headings in clockwise rotation
@@ -238,9 +247,14 @@ namespace trimble
 		return _returnPos;
 	}
 
+	//-----------------------------------------------------------------------------
+	// CImplement::GenerateIndividualNozzles(...)
+	//-----------------------------------------------------------------------------
 	CEnuPosition CImplement::GenerateIndividualNozzles(const CEnuPosition leftNozzle, double heading)
 	{
-		// Example: 120" / 12" = 10" spacing
+		// Set the spacing on the nozzles based on _Width and _numNozzles
+		// ASSUME: Equal spacing and perfect heading
+		// TODO: Add rotattional logic based on heading.
 		double spacingDistnace = (_Width / _numNozzles);
 
 		CEnuPosition temp = leftNozzle;
@@ -269,7 +283,7 @@ namespace trimble
 					temp.setNorth = vectorOfNozzles[i - 1].getEast + spacingDistnace;
 				}
 			}
-			vectorOfNozzles.push_back(temp); // Populate the vector from left most side to nth nozzle
+			vectorOfNozzles.push_back(temp); 
 		}
 	}
 

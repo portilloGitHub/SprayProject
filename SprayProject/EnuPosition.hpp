@@ -26,12 +26,10 @@ namespace trimble
 		CEnuPosition(double east, double north, double up) :
 			_east(east), _north(north), _up(up) {}
 
-		// Added "get" to make this easier to understand
 		double getEast() const { return _east; }
 		double getNorth() const { return _north; }
 		double getUp() const { return _up; }
 
-		// Create some setter functionality
 		double setEast(double east) { _east = east; }
 		double setNorth(double north) { _north = north; }
 		double setUp(double up) { _up = up; }
@@ -50,7 +48,6 @@ namespace trimble
 		// These should set the _east, _north, and _up variables when called
 		void FromLLA(const CLlaPos& llaPos); // Geodetic (Lat,Long,meter)
 		void FromXYZ(const CXyzPos& xyzPos); // ENU (meter,meter,meter)
-		// End section
 
 	private: 
 		double _east;

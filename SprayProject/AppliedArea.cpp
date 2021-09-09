@@ -13,8 +13,6 @@ namespace trimble
 {
 	//-----------------------------------------------------------------------------
 	// Constructor
-	// May need to add some initialization logic here. 
-	// Keep empty for now.
 	//----------------------------------------------------------------------------- 
 	CAppliedArea::CAppliedArea()
 	{
@@ -34,6 +32,12 @@ namespace trimble
 	//-----------------------------------------------------------------------------
 	void CAppliedArea::CheckOverlap(const std::vector<CEnuPosition> vectorOfNozzles)
 	{
+		// Create a singular int hex value that will be used to send to the control register 
+		// Assume: 16 bit register
+		// Bit shift and OR it with the last value
+		// 
+		// Valve 0 (left most valve) is little endian 
+
 		nozzleControl = 0x0000; // Set the nozzle control to default 0x0000
 
 		// Test each nozzel to make sure it is not in an already sprayed area
@@ -51,13 +55,6 @@ namespace trimble
 				nozzleControl |= (1 << i);
 			}
 		}
-
-		// (2) Evaluate the nozzleState vector and create a singular int hex vaue 
-		//		that will be used to send to the control register 
-		// Assume: 16 bit register
-		// Bit shift and OR it with the last value as we itterate through the vector
-		// 
-		// Valve 0 (left most valve) is little endian 
 	}
 
 	bool CAppliedArea::isOnBorder(const CEnuPosition vectorOfNozzless_element)

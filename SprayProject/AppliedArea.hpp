@@ -28,8 +28,7 @@ namespace trimble
 		// Add new polygon info to the vector list
 		void AddPolygon(const CPolygon& poly);			
 		
-		// Serach throught the vector list and compare if current ENU position 
-		// matches any vector ENU postions
+		// Compare the current vectorOfNozzles ENU location to established polygons
 		// TODO: R&D on better methods to iterate and compare vector data
 		//			Search logic should be added in ApplieArea.cpp
 		void CheckOverlap(const std::vector<CEnuPosition> vectorOfNozzles);
@@ -38,9 +37,8 @@ namespace trimble
 
 
 	private:
-		// TODO not sure if this is the proper container
+		// Vector of Polygons
 		std::vector<CPolygon> CPolygonVector;
-		//CPolygonVector _polygons;
 
 		int nozzleControl;
 

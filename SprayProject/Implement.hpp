@@ -26,7 +26,7 @@ namespace trimble
 	public:
 	  CImplement(double width, double distanceToTractor, int numNozzles);
 
-	  // Retrieve configured width and distance to tractor
+	  // Retrieve configured width and distance to tractor in meters
 	  double Width() const { return _Width; }
 	  double DistanceToTractor() const { return _DistanceToTractor; }
 
@@ -65,6 +65,8 @@ namespace trimble
 								 const int nozzleNumber) const;
 
 		// Turns all the nozzles on or off so they activly start or stop spraying
+		// NOTE: This uses hex values to write to an assummed register that controls 
+		//			the spray valves
 		void SetNozzles(int hexVal);
 
 		// Updates the applied area given a new implement position and heading
