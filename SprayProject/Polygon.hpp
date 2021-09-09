@@ -23,7 +23,7 @@ namespace trimble
 	{
 
 	public:
-		CPolygon() : _numNozzles(0), _Width(0.0), _Heading(0.0) {};
+		CPolygon() : _numNozzles(0), _Width(0.0), _Heading(0.0), _nozzleNumber(0) {};
 
 		CPolygon(const CEnuPosition& oldLeft,
 			const CEnuPosition& oldRight,
@@ -31,17 +31,20 @@ namespace trimble
 			const CEnuPosition& newRight,
 			const double width,
 			const int numNozzles,
-			const double heading) :
+			const double heading,
+			const int nozzleNumber) :
 			_oldLeft(oldLeft),
 			_oldRight(oldRight),
 			_newLeft(newLeft),
 			_newRight(newRight),
 			_Width(width),
 			_numNozzles(numNozzles),
-			_Heading(heading) {};
+			_Heading(heading),
+			_nozzleNumber(nozzleNumber) {};
 
-		// Vector of vectors that hold CEnuPostion for each nozzel
-		std::vector<std::vector<CEnuPosition>> vectorOfNozzels;
+		// Vector that holds CEnuPostion for polygon data
+		// {oldLeft, newLeft, newRight, oldRight}
+		std::vector<CEnuPosition> polygonVector;
 		CPolygon getPolygonVector();
 
 		
@@ -51,10 +54,8 @@ namespace trimble
 		CEnuPosition _oldRight;
 		CEnuPosition _newLeft;
 		CEnuPosition _newRight;
-		const int _numNozzles;
+		const int _numNozzles,_nozzleNumber;
 		const double _Width,_Heading;
-
-		CEnuPosition offsetENUPoints(CEnuPosition& enuData);
 	};
 }
 

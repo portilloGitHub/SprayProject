@@ -61,7 +61,8 @@ namespace trimble
 								 const CEnuPosition& frontRight,
 								 const double width,
 								 const int numNozzles,
-								 const double heading) const;
+								 const double heading,
+								 const int nozzleNumber) const;
 
 		// Turns all the nozzles on or off so they activly start or stop spraying
 		void SetNozzles(int hexVal);
@@ -74,7 +75,7 @@ namespace trimble
 		const double  _DistanceToTractor;
 		double        _currHeading;
 		bool          _isSpraying;
-		int			  _numNozzles;
+		int			  _numNozzles,_nozzleNumber;
 
 		// Upon decleration, _currPos / _currLPos / _currRPos
 		// are set to the current ENU coordinates received from the 

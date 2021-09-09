@@ -34,18 +34,15 @@ namespace trimble
 		//			Search logic should be added in ApplieArea.cpp
 		void CheckOverlap(const std::vector<CEnuPosition> vectorOfNozzles);
 
-		int getAreaControlValue() { return nozzelControl; }
+		int getAreaControlValue() { return nozzleControl; }
 
 
 	private:
 		// TODO not sure if this is the proper container
 		std::vector<CPolygon> CPolygonVector;
-		std::vector<CEnuPosition> enuCentroidVector;
 		//CPolygonVector _polygons;
 
-		int nozzelControl;
-
-		int testSprayedArea(const std::vector<CEnuPosition> vectorOfNozzless);
+		int nozzleControl;
 
 		bool isOnBorder(const CEnuPosition vectorOfNozzless_element);
 

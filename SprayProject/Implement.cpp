@@ -62,26 +62,41 @@ namespace trimble
 		// Test if nozzels are in an alreay applied area
 		// Turn the nozzles off if the spray polygon overlaps where we've already sprayed
 		// Return a hex value to send to a control register on the MCU
+		// ALL OFF - 0x0000
+		// ALL ON  - 0x0FFF
 		_appliedArea.CheckOverlap(vectorOfNozzles);
 		int turnNozzlesOn = _appliedArea.getAreaControlValue();
+		
+		// Special command: Send hex value from 0x0000 to 0x0FFF
+		//					to control register on MCU to control sprayer relays
+		SetNozzles(turnNozzlesOn); 
+		
 
-		CPolygon newPoly = GeneratePolygon(_currLPos,
-			_currRPos,
-			newLPos,
-			newRPos,
-			_Width,
-			_numNozzles,
-			heading);
-
-		// Logic to turn on / off specific nozzles 
-		if (turnNozzlesOn > 0x00)
+		// Update any areas where the spray nozzle was on
+		for (int i = 0;i < vectorOfNozzles.size();i++)
 		{
-			// ENU point is not in a sprayed area.
-			// Update the poylgon vector
-			_appliedArea.AddPolygon(newPoly);
+			// Little endian
+			// Bit shift the hex value and perform logical & to test if 
+			// that nozzle was turned on
+			if ( (turnNozzlesOn >> i) & 0x0001 )
+			{
+				// Nozzle was reported on
+				CPolygon newPoly = GeneratePolygon(_currLPos,
+					_currRPos,
+					newLPos,
+					newRPos,
+					_Width,
+					_numNozzles,
+					heading,
+					_nozzleNumber);
+
+				// ENU point is not in a sprayed area.
+				// Update the poylgon vector
+				_appliedArea.AddPolygon(newPoly);
+			}
 		}
 
-		SetNozzles(turnNozzlesOn);
+		
 
 		_isSpraying = turnNozzlesOn;
 		_currPos = newImplementPos;
@@ -96,10 +111,10 @@ namespace trimble
 											const CEnuPosition& frontRight,
 											const double Width,
 											const int numNozzles,
-											const double heading
-											) const
+											const double heading,
+											const int nozzleNumber ) const
 	{
-		CPolygon newPolygon = CPolygon( backLeft, backRight, frontLeft, frontRight, Width, numNozzles, heading);
+		CPolygon newPolygon = CPolygon( backLeft, backRight, frontLeft, frontRight, Width, numNozzles, heading, nozzleNumber);
 		return newPolygon.getPolygonVector();
 	}
 

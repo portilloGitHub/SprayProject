@@ -34,45 +34,30 @@ namespace trimble
 	//-----------------------------------------------------------------------------
 	void CAppliedArea::CheckOverlap(const std::vector<CEnuPosition> vectorOfNozzles)
 	{
-		// (1) Check to see if any of the nozzles lie inside a sprayed area
-		int nozzelControlValue = testSprayedArea(vectorOfNozzles);
-	}
+		nozzleControl = 0x0000; // Set the nozzle control to default 0x0000
 
-
-	int CAppliedArea::testSprayedArea(const std::vector<CEnuPosition> vectorOfNozzless)
-	{
-		int nozzelControl = 0;
-		std::vector<bool> nozzelState;
-
-		// (1) Test each nozzel to make sure it is not in an already sprayed area
-		for (int i = 0; i < vectorOfNozzless.size(); i++)
+		// Test each nozzel to make sure it is not in an already sprayed area
+		for (int i = 0; i < vectorOfNozzles.size(); i++)
 		{
-			if (isOnBorder(vectorOfNozzless[i]))
+			if (isOnBorder(vectorOfNozzles[i]) || 
+				isInsidePolygon(vectorOfNozzles[i]))
 			{
-				nozzelState.push_back(true);
+				// Turn OFF nozzle. On Border or its located inside and existing polygon
+				nozzleControl |= (0 << i);
 			}
-			else if (isInsidePolygon(vectorOfNozzless[i]))
+			else
 			{
-				nozzelState.push_back(true);
+				// Turn ON nozzle. Area has not been sprayed yet.
+				nozzleControl |= (1 << i);
 			}
-			else nozzelState.push_back(false);
 		}
 
 		// (2) Evaluate the nozzleState vector and create a singular int hex vaue 
 		//		that will be used to send to the control register 
 		// Assume: 16 bit register
 		// Bit shift and OR it with the last value as we itterate through the vector
-		for(int j = 0; j < nozzelState.size(); j++)
-		{
-			if (nozzelState[j] == false)
-			{
-				nozzelControl |= (0 << j);
-			}
-			else if (nozzelState[j] == true)
-			{
-				nozzelControl |= (1 << j);
-			}
-		}
+		// 
+		// Valve 0 (left most valve) is little endian 
 	}
 
 	bool CAppliedArea::isOnBorder(const CEnuPosition vectorOfNozzless_element)
