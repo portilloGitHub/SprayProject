@@ -1,0 +1,147 @@
+﻿  AppliedArea.cpp
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C2143: syntax error: missing ',' before '&'
+  EnuPosition.cpp
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\AppliedArea.cpp(44,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C2143: syntax error: missing ',' before '&'
+  Implement.cpp
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.cpp(10,10): fatal error C1083: Cannot open include file: 'XyzPos.hpp': No such file or directory
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(76,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(150,40): error C3867: 'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(196,60): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(196,60): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(197,41): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(201,39): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(202,62): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(202,62): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(206,60): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(206,60): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(207,41): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(211,39): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(212,62): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(212,62): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(215,34): error C3867: 'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(227,60): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(227,60): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(228,41): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(232,39): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(233,62): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(233,62): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(237,60): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(237,60): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(238,41): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(242,39): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(243,62): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(243,62): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(246,34): error C3867: 'trimble::CEnuPosition::getUp': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(271,69): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(271,69): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(275,71): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(275,71): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(279,69): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(279,69): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(283,70): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+  main.cpp
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Implement.cpp(283,70): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Polygon.cpp
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(9,23): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(10,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(34,56): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(34,56): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(35,56): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(35,56): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(36,63): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(36,63): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(37,63): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(37,63): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(41,58): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(41,58): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(42,58): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(42,58): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(43,65): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(43,65): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(44,65): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(44,65): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(48,56): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(48,56): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(49,56): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(49,56): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(50,63): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(50,63): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(51,63): error C3867: 'trimble::CEnuPosition::getEast': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(51,63): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(55,58): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(55,58): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(56,58): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(56,58): error C2296: '-': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(57,65): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(57,65): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(58,65): error C3867: 'trimble::CEnuPosition::getNorth': non-standard syntax; use '&' to create a pointer to member
+  Tractor.cpp
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Polygon.cpp(58,65): error C2296: '+': illegal, left operand has type 'double (__thiscall trimble::CEnuPosition::* )(void) const'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(49,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,29): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(57,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(58,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(59,41): error C2143: syntax error: missing ',' before '&'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Tractor.cpp(27,16): error C2143: syntax error: missing ')' before '<'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Tractor.cpp(27,16): error C2660: 'trimble::CEnuPosition::FromXYZ': function does not take 0 arguments
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\EnuPosition.hpp(50,8): message : see declaration of 'trimble::CEnuPosition::FromXYZ'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Tractor.cpp(27,17): error C2065: 'lla': undeclared identifier
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Tractor.cpp(27,22): error C2059: syntax error: '||'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Tractor.cpp(27,68): error C2059: syntax error: ')'
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Tractor.cpp(33,12): error C2059: syntax error: '<'
+  Generating Code...
+C:\Users\APortillo\Documents\CodingTest\SprayProject\SprayProject\Tractor.cpp(39,14): error C2059: syntax error: '<'
